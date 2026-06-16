@@ -24,7 +24,7 @@ if response.status_code == 200:#status_code = 200 indica que a requisição foi 
 else:
     print(f"O erro de requisição foi {response.status_code}")
 
-for nome_do_restaurante,dados in dados_restaurante.items():
-    nome_do_arquivo = f'{nome_do_restaurante}.json'
-    with open(nome_do_arquivo,'w') as arquivo_restaurantes:
-        json.dump(dados,arquivo_restaurantes,indent=4)
+for nome_do_restaurante,dados in dados_restaurante.items(): #Pegando os 'items'
+    nome_do_arquivo = f'{nome_do_restaurante}.json' #Avisando que nome_do_arquivo é = nome_do_restaurante.json 
+    with open(nome_do_arquivo,'w') as arquivo_restaurantes: # Criando arquivo em branco.. usamos o w(= write), ou seja, vamos escrever nesses arquivos
+        json.dump(dados,arquivo_restaurantes,indent=4) # dados são inseridos nos arquivos cirados acima
