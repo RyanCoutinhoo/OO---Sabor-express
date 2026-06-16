@@ -28,7 +28,7 @@ Antes de começar, você precisar de ter o [Python](https://www.python.org/) ins
    ```bash
    git clone [https://github.com/TEU_UTILIZADOR/nome-do-repositorio.git](https://github.com/TEU_UTILIZADOR/nome-do-repositorio.git)
    cd nome-do-repositorio
-
+  ```
 2.**Cria e ativa o ambiente virtual (venv):**
   ```bash
   # Criar o ambiente virtual
