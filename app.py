@@ -8,7 +8,7 @@ response = requests.get(url) #Nossa URL vira um endpoint, responsável por mostr
 print(response)
 
 if response.status_code == 200:#status_code = 200 indica que a requisição foi um sucesso
-    dados_json = response.json()
+    dados_json = response.json() #Abrindo o arquivo json da requisição
     dados_restaurante = {}
     for item in dados_json:
         nome_do_restaurante = item['Company']
@@ -27,4 +27,5 @@ else:
 for nome_do_restaurante,dados in dados_restaurante.items(): #Pegando os 'items'
     nome_do_arquivo = f'{nome_do_restaurante}.json' #Avisando que nome_do_arquivo é = nome_do_restaurante.json 
     with open(nome_do_arquivo,'w') as arquivo_restaurantes: # Criando arquivo em branco.. usamos o w(= write), ou seja, vamos escrever nesses arquivos
-        json.dump(dados,arquivo_restaurantes,indent=4) # dados são inseridos nos arquivos cirados acima
+        json.dump(dados,arquivo_restaurantes,indent=4) # dados são inseridos nos arquivos criados acima
+        
