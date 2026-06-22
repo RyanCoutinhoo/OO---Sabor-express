@@ -54,4 +54,4 @@ uvicorn main:app --reload
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Ryan Coutinho Barra** — Conecte-se comigo no [LinkedIN](https://www.linkedin.com/in/ryan-coutinho-barra-90b045260/)
+Desenvolvido por **Ryan Coutinho Barra** e escola **Alura** — Conecte-se comigo no [LinkedIN](https://www.linkedin.com/in/ryan-coutinho-barra-90b045260/)
